@@ -9,7 +9,7 @@ repositories {
 
 ext {
     javaFxVersion = '24'
-    javaVersion = 22
+    javaVersion = 24
 }
 
 dependencies {
