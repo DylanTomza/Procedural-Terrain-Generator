@@ -1,14 +1,29 @@
 # Gradle build files
 .gradle/
 build/
+out
+
+# IntelliJ
+.idea/
+*.iml
+
+# VSCode
+.vscode/
 
 # Eclipse project files
 .project
 .classpath
+.settings/
 
 # Java compiled files
 *.class
 
 # Logs
 *.log
+
+# MacOs
+.DS_Store
+
+# Windows
+Thumbs.db
 
