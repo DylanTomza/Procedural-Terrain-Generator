@@ -14,8 +14,16 @@ A **JavaFX-based procedural terrain generator** that allows users to generate, m
 - Java Development Kit (JDK)
 
 ### **Installation & Usage**
-Run the following commands in the terminal to build and execute the project:
+1. In the file `build.gradle`, change "javaVersion = 24" to reflect the version installed on your system.
+2. In the terminal, navigate to the project's directory and run the following command to build and execute the project:
 
-```sh
+```
 ./gradlew build
 ./gradlew run
+```
+
+### **Contributors**
+- [Dylan Tomza](https://github.com/DylanTomza)
+- [Gabriel Bawden](https://github.com/Gabriel-Bawden)
+- Aslan Ali
+
