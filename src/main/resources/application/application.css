@@ -1,0 +1,41 @@
+/************************************************************/
+/* Author: Aslan Ali                                        */
+/* Major: Computer Science                                  */
+/* Creation Date: April 29th, 2024                          */
+/* Due Date: April 29th, 2024                               */
+/* Course: CS211-02                                         */
+/* Professor Name: Professor Shimkanon                      */
+/* Assignment: Final Project                                */
+/* Filename: application.css                                */
+/* Purpose: the final projects Cascading Style Sheets       */
+/************************************************************/
+
+.root{ /*selects style sheets for the root class */
+	-fx-background-color:#FFB6C1; /*changes the background to a pink color */
+	-fx-background-image: url("https://i.pinimg.com/originals/f0/f8/6a/f0f86a45154e0891efc81ddc21326ed3.gif"); /*sets the background image */
+	-fx-background-position: center; /*sets the image to the middle of the window rather than the top left */
+}
+
+
+.label{ /*selects style sheets for the label class */
+	-fx-text-fill:"white"; /* changes the font color to white */
+	-fx-font-family:"Verdana"; /* changes font to Verdana */
+    -fx-font-weight: bold; /* changes the font weight to bold for visibility */
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 5, 0.0 , 0 , 0 ); /* adds dropshadow to label */
+    
+}
+
+
+.button {/*selects style sheets for the button class */
+    -fx-text-fill: white; /* changes the font color to white */
+    -fx-font-family: "Verdana"; /* changes font to Verdana */
+    -fx-font-weight: bold; /* changes the font weight to bold for visibility */
+    -fx-background-color: linear-gradient(#ffd2d2, #ffc3c3); /* adds pink background gradient to button */
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ); /* adds dropshadow to button */
+}
+
+
+.slider { /*selects style sheets for the slider class */
+      -fx-background-color: linear-gradient(#ffd2d2, #ffc3c3);/* adds pink background gradient to slider */
+      -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ); /* adds dropshadow to slider */
+}

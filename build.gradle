@@ -1,0 +1,42 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    javaFxVersion = '24'
+    javaVersion = 22
+}
+
+dependencies {
+    implementation "org.openjfx:javafx-controls:$javaFxVersion"
+    implementation "org.openjfx:javafx-fxml:$javaFxVersion"
+}
+
+javafx {
+    version = javaFxVersion
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+application {
+    mainClass = 'application.Main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(javaVersion)
+    }
+}
+
+tasks.withType(JavaExec).configureEach {
+    if (JavaVersion.current().isJava9Compatible()) {
+        jvmArgs += [
+            '--module-path', classpath.asPath,
+            '--add-modules', 'javafx.controls,javafx.fxml'
+        ]
+    }
+}

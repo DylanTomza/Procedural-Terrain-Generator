@@ -1,0 +1,14 @@
+# Gradle build files
+.gradle/
+build/
+
+# Eclipse project files
+.project
+.classpath
+
+# Java compiled files
+*.class
+
+# Logs
+*.log
+
