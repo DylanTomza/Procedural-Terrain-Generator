@@ -7,7 +7,7 @@ A **JavaFX-based procedural terrain generator** that allows users to generate, m
 - **Sea Level Control** – Modify water elevation.
 - **Erosion Customization** – Influence terrain realism.
 - **Detail Scaling** – Choose the granularity of terrain features.
-- **Scale Adjustments** – Resize the terrain dynamically.
+- **Scale Adjustments** – Resize the terrain.
 - **Export to `.obj`** – Generate a 3D model for further use.
 
 ### **Prerequisites**
