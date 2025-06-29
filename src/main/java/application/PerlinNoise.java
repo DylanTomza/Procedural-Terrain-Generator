@@ -41,32 +41,32 @@ public class PerlinNoise
 	private double[] getRandVector(int ix, int iy)
 	{
 		int w = 8 * Integer.SIZE; //calculates the width of an integer in bits
-        int s = w / 2; //calculates half the width of an integer to be used as a shift value
-        int a = ix + seed * 1000; //calculates a and b using ix, iy, and seed so vector values are repeatable
-        int b = iy + seed * 1000;
-        
-        a *= 3284157443L; //multiplies a by a large prime number 
- 
-        /*performs a bitwise OR operation on a when left shifted by s
-         * and a when right shifted by (w-s). A bitwise XOR is then
-         * performed on b and what is returned by the original OR
-         */
-        b ^= a << s | a >>> (w - s); 
-        b *= 1911520717L; //multiplies b by a large prime number
- 
-        /*performs a bitwise OR operation on b when left shifted by s
-         * and b when right shifted by (w-s). A bitwise XOR is then
-         * performed on a and what is returned by the original OR
-         */
-        a ^= b << s | b >>> (w - s);
-        a *= 2048419325L * seed; //multiplies a by a large prime number and the seed
-
-        /*uses sin(a) and cos(a) to create x and y components of a psuedo-random
-         * vector with length 1
-         */
-        double[] vector = {Math.sin(a), Math.cos(a)};
- 
-        return vector; //returns psuedo-randomly generated vector
+	        int s = w / 2; //calculates half the width of an integer to be used as a shift value
+	        int a = ix + seed * 1000; //calculates a and b using ix, iy, and seed so vector values are repeatable
+	        int b = iy + seed * 1000;
+	        
+	        a *= 3284157443L; //multiplies a by a large prime number 
+	 
+	        /*performs a bitwise OR operation on a when left shifted by s
+	         * and a when right shifted by (w-s). A bitwise XOR is then
+	         * performed on b and what is returned by the original OR
+	         */
+	        b ^= a << s | a >>> (w - s); 
+	        b *= 1911520717L; //multiplies b by a large prime number
+	 
+	        /*performs a bitwise OR operation on b when left shifted by s
+	         * and b when right shifted by (w-s). A bitwise XOR is then
+	         * performed on a and what is returned by the original OR
+	         */
+	        a ^= b << s | b >>> (w - s);
+	        a *= 2048419325L * seed; //multiplies a by a large prime number and the seed
+	
+	        /*uses sin(a) and cos(a) to create x and y components of a psuedo-random
+	         * vector with length 1
+	         */
+	        double[] vector = {Math.sin(a), Math.cos(a)};
+	 
+	        return vector; //returns psuedo-randomly generated vector
 	}
 	
 	/***************************************************************************/
