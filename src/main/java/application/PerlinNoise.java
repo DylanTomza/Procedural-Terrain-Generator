@@ -38,7 +38,6 @@ public class PerlinNoise
 	/* Parameters: int - ix: x value of gridpoint, int - iy: y value of gridpoint
 	/* Return Value: double[] - array of length 2 representing a gradient vector of length 1
 	/***************************************************************************/
-	//C++ perlin noise tutorial referenced: https://www.youtube.com/watch?v=kCIaHqb60Cw
 	private double[] getRandVector(int ix, int iy)
 	{
 		int w = 8 * Integer.SIZE; //calculates the width of an integer in bits
